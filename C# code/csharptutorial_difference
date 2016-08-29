@@ -1,0 +1,34 @@
+
+// Software which compares whether the difference between two numbers is bigger than 100
+int i,a,y,syc;
+	listBox1.Items.Clear();
+	a=1;
+	syc = int.Parse(textBox1.Text));
+	listBox1.Items.Add(a.ToString());
+	for(i = 1; i<=syc; i++)
+	{
+	y=a;
+	a = 2 * a;
+	listBox1.Items.Add(a.ToString());
+	
+	if(a - y > 1000)
+		{
+		label1.Text = a.ToString();
+		label2.Text = y.ToString();
+		label3.Text = i.ToString();
+		
+		break;
+		}
+	}
+	
+	if(syc == i)
+	{
+	MessageBox.Show(“Congratulations! Difference is bigger than 100.”);
+	}
+	else
+	{
+	MessageBox.Show(“Difference is lower than 100.“);
+	}
+	
+	
+	
