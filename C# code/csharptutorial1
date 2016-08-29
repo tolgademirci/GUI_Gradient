@@ -1,0 +1,60 @@
+
+// farkı bulup 100'den küçük olup olmadığını karşılaştıran program
+int i,a,y,syc;
+	listBox1.Items.Clear();
+	a=1;
+	syc = int.Parse(textBox1.Text));
+	listBox1.Items.Add(a.ToString());
+	for(i = 1; i<=syc; i++)
+	{
+	y=a;
+	a = 2 * a;
+	listBox1.Items.Add(a.ToString());
+	
+	if(a - y > 1000)
+		{
+		label1.Text = a.ToString();
+		label2.Text = y.ToString();
+		label3.Text = i.ToString();
+		
+		break;
+		}
+	}
+	
+	if(syc == i)
+	{
+	MessageBox.Show("Tebrikleri Bildiniz.");
+	}
+	else
+	{
+	MessageBox.Show("Bilemediniz");
+	}
+	
+	
+	//2 yazılı 2 performans notu girilen öğrencinin not durumunu gösteren
+ program
+ 
+ int y1, y2, y1, y2, ort;
+ 
+ 	y1 = Convert.ToInt16(textBox1.Text);
+ 	y2 = Convert.ToInt16(textBox2.Text);
+ 	p1 = Convert.ToInt16(textBox3.text);
+ 	p2 = Convert.ToInt16(textBox4.text);
+ 	
+ 	ort = (y1 + y2+ p1 + p2) / 4;
+ 	
+ 	textBox5.Text = ort.ToString();
+ 	
+ 	if(ort >= 50)
+ 	{
+ 		textBox6.Text = "Geçer";
+ 	}
+ 	else
+ 	{
+ 		textBox6.Text = "Kalır";
+ 	}
+ 
+ 	
+ 	//Dairenin alanını hesaplayan program
+ 	
+ 	public From1()
